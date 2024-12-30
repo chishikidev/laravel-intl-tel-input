@@ -1,0 +1,60 @@
+{
+    "name": "chishikidev/laravel-intl-tel-input",
+    "description": "International Telephone Input component for Laravel Blade and Livewire based on the intl-tel-input JavaScript library. ",
+    "keywords": [
+        "chishikidev",
+        "laravel-intl-tel-input",
+        "livewire-intl-tel-input",
+        "international-telephone-input",
+        "intl-tel-input",
+        "telephone-input",
+        "phone-input",
+        "laravel",
+        "livewire",
+        "laravel-livewire"
+    ],
+    "homepage": "https://github.com/chishikidev/laravel-intl-tel-input",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Chishiki Dev",
+            "email": "chishiki.dev@gmail.com",
+            "homepage": "https://chishiki.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChishikiDev\\LaravelIntlTelInput\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChishikiDev\\LaravelIntlTelInput\\LaravelIntlTelInputServiceProvider"
+            ],
+            "aliases": {
+                "LaravelIntlTelInput": "ChishikiDev\\LaravelIntlTelInput\\LaravelIntlTelInputFacade"
+            }
+        }
+    }
+}
